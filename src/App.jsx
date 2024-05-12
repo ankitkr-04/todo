@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import TodoList from './components/TodoList'
-import TodoInput from './components/TodoInput'
+import React, { useState } from 'react';
+import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
 function App() {
+  const [todos, setTodos] = useState([]);
+
+  const addTodo = (newTodo) => {
+    setTodos([newTodo, ...todos]);
+  };
+
   return (
     <main>
-      <TodoInput />
-      <TodoList />
+      <TodoInput onAddTodo={addTodo} /> 
+      <TodoList todos={todos} />       
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
