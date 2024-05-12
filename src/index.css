@@ -10,9 +10,9 @@
 
 
 .todo-app {
-    width: 100%;
+    width: 90%;
     /* max-width: 600px; */
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -54,6 +54,8 @@ textarea  {
 .todo-list {
     list-style: none;
     padding: 0;
+    margin: auto;
+    max-width: 760px;
 }
 
 .todo-item {
@@ -64,43 +66,53 @@ textarea  {
 .todo-item:last-child {
     border-bottom: none;
 }
+.recent{
+    font-size: 30px;
+    padding: 20px 10px;
+}
 
 /* TodoCard.css */
 
-.todo-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.todo-content {
-    flex: 1;
-}
-
-.todo-title {
-    margin: 0;
-    font-size: 18px;
-}
-
-.todo-description {
-    margin: 0;
-    color: #666;
-}
-
-.todo-status-button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bfc;
+.todo-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .todo-card.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .todo-card.incomplete {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .todo-card-title {
+    margin-top: 0;
+  }
+  
+  .todo-card-description {
+    margin-bottom: 10px;
+  }
+  
+  .todo-card-button {
+    background-color: #007bff;
     color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
     cursor: pointer;
-}
-
-.todo-item.completed .todo-title,
-.todo-item.completed .todo-description {
-    text-decoration: line-through;
-}
-
-.todo-item.incomplete .todo-status-button {
-    background-color: #f44336;
-}
+  }
+  
+  .todo-card-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-card-status {
+    font-style: italic;
+  }
+  

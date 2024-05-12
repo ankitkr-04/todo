@@ -7,7 +7,7 @@ const TodoInput = ({ onAddTodo }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(todoTitle, todoDescription);
+    // console.log(todoTitle, todoDescription);
     if (todoTitle.trim() !== "") {
       onAddTodo({
         id: nextId,
