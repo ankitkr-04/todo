@@ -1,0 +1,42 @@
+/* Styling for the header */
+*{
+    font-family: oswald;
+    font-size: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling for the add button */
+.add {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Styling for the input */
+.input-field {
+    padding: 10px 4px 8px 30px;
+    width: 100%;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    
+    
+}
